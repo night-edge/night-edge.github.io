@@ -13,26 +13,9 @@
 </head>
 <body>
 
-<h2>Norwegian Mountain Trip</h2>
-<img border="0" src="/images/pulpit.jpg" alt="Pulpit rock" width="304" height="228">
-<form>
-First name: <input type="text" name="firstname"><br>
-Last name: <input type="text" name="lastname">
-</form>
-  const start = new Date();
-function timer(start) {
-  var now = new Date();
-  var det = now - start;
-  console.log(det);
-  now.setTime(det);
-  now.setHours(0);
-  document.getElementById("id_name").innerHTML = now.toLocaleTimeString();
-}
-setInterval(function(){timer(start)}, 1000);
-</body>
-<html data-darkreader-mode="dynamic" data-darkreader-scheme="dark">
 
-<head>
+
+
     <style class="darkreader darkreader--fallback" media="screen"></style>
     <style class="darkreader darkreader--text" media="screen">
         *:not(pre, pre *, code, .far, .fa, .glyphicon, [class*="vjs-"], .fab, .fa-github, .fas, .material-icons, .icofont, .typcn, mu, [class*="mu-"], .glyphicon, .icon) {
