@@ -1,234 +1,448 @@
  <!DOCTYPE html>
- <html lang="en">
+<html>
+<head> 
+<meta charset="utf-8"> 
+<link rel="shortcut icon" href="image/IMG_20230301_122458.png" type="image/x-icon">
+<title>night-edge的试验田</title> 
+</head>
+<body>
 
- <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Simple PWA</title>
-	<link rel="canonical" href="https://simplepwa.com" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<!-- Icons and Colors -->
-	<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-	<link rel="manifest" href="./manifest.json">
-	<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#000000">
-	<link rel="shortcut icon" href="./favicon.ico">
-	<meta name="msapplication-TileColor" content="#000000">
-	<meta name="msapplication-TileImage" content="./mstile-144x144.png">
-	<meta name="msapplication-config" content="./browserconfig.xml">
-	<meta name="theme-color" content="#000000">
-	
-	<!-- SEO and Social Sharing and SEO -->
-	<meta name="description" content="Simple Progressive Web App (PWA) template" />
-	<meta name="robots" content="noodp" />
-	<meta name="author" content="Nicole Furlan">
-	<meta name="keywords" content="progressive web app, progressive web application, pwa, pwa progressive web app, pwa progressive web application, progressive app, basic progressive web app, basic progressive web application, basic pwa, example progressive web app, example progressive web application, example pwa, progressive web app basic, progressive web app builder, progressive web app example, progressive web app sample, progressive web app template, sample progressive web app, sample progressive web application, sample pwa, free progressive web application template, progressive web application template, progressive web app template free, progressive web app template free download, progressive web app html template, progressive web app template github" />
-	<meta property="og:locale" content="en_US" />
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content="Simple PWA" />
-	<meta property="og:description" content="Simple Progressive Web App (PWA) template" />
-	<meta property="og:url" content="https://simplepwa.com" />
-	<meta property="og:site_name" content="Simple PWA" />
-	<meta property="section:publisher" content="https://www.facebook.com/simplepwa/" />
-	<meta property="og:image" content="https://simplepwa.com/share.jpg" />
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Simple PWA" />
-	<meta name="twitter:description" content="Simple Progressive Web App (PWA) template" />
-	<meta name="twitter:site" content="@simplepwa" />
-	<meta name="twitter:image" content="https://simplepwa.com/share.jpg" />
-	<meta name="twitter:creator" content="@nicolemfurlan" />
+<h2>Norwegian Mountain Trip</h2>
+<img border="0" src="/images/pulpit.jpg" alt="Pulpit rock" width="304" height="228">
+<form>
+First name: <input type="text" name="firstname"><br>
+Last name: <input type="text" name="lastname">
+</form>
+  const start = new Date();
+function timer(start) {
+  var now = new Date();
+  var det = now - start;
+  console.log(det);
+  now.setTime(det);
+  now.setHours(0);
+  document.getElementById("id_name").innerHTML = now.toLocaleTimeString();
+}
+setInterval(function(){timer(start)}, 1000);
+</body>
+<html data-darkreader-mode="dynamic" data-darkreader-scheme="dark">
 
-	<!-- Styles -->
-	<link rel="stylesheet" href="style.css">
+<head>
+    <style class="darkreader darkreader--fallback" media="screen"></style>
+    <style class="darkreader darkreader--text" media="screen">
+        *:not(pre, pre *, code, .far, .fa, .glyphicon, [class*="vjs-"], .fab, .fa-github, .fas, .material-icons, .icofont, .typcn, mu, [class*="mu-"], .glyphicon, .icon) {
+          -webkit-text-stroke: 0.2px !important;
+          text-stroke: 0.2px !important;
+        }
+    </style>
+    <style class="darkreader darkreader--invert" media="screen">
+        .jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, #bit-notification-bar-iframe, ::-webkit-calendar-picker-indicator {
+            filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
+        }
+    </style>
+    <style class="darkreader darkreader--inline" media="screen">
+        [data-darkreader-inline-bgcolor] {
+          background-color: var(--darkreader-inline-bgcolor) !important;
+        }
+        [data-darkreader-inline-bgimage] {
+          background-image: var(--darkreader-inline-bgimage) !important;
+        }
+        [data-darkreader-inline-border] {
+          border-color: var(--darkreader-inline-border) !important;
+        }
+        [data-darkreader-inline-border-bottom] {
+          border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+        }
+        [data-darkreader-inline-border-left] {
+          border-left-color: var(--darkreader-inline-border-left) !important;
+        }
+        [data-darkreader-inline-border-right] {
+          border-right-color: var(--darkreader-inline-border-right) !important;
+        }
+        [data-darkreader-inline-border-top] {
+          border-top-color: var(--darkreader-inline-border-top) !important;
+        }
+        [data-darkreader-inline-boxshadow] {
+          box-shadow: var(--darkreader-inline-boxshadow) !important;
+        }
+        [data-darkreader-inline-color] {
+          color: var(--darkreader-inline-color) !important;
+        }
+        [data-darkreader-inline-fill] {
+          fill: var(--darkreader-inline-fill) !important;
+        }
+        [data-darkreader-inline-stroke] {
+          stroke: var(--darkreader-inline-stroke) !important;
+        }
+        [data-darkreader-inline-outline] {
+          outline-color: var(--darkreader-inline-outline) !important;
+        }
+        [data-darkreader-inline-stopcolor] {
+          stop-color: var(--darkreader-inline-stopcolor) !important;
+        }
+    </style>
+    <style class="darkreader darkreader--variables" media="screen">
+        :root {
+           --darkreader-neutral-background: #131516;
+           --darkreader-neutral-text: #d8d4cf;
+           --darkreader-selection-background: #004daa;
+           --darkreader-selection-text: #e8e6e3;
+        }
+    </style>
+    <style class="darkreader darkreader--root-vars" media="screen"></style>
+    <style class="darkreader darkreader--user-agent" media="screen">
+        html {
+            color-scheme: dark !important;
+        }
+        html, body {
+            border-color: #736b5e;
+            color: #e8e6e3;
+        }
+        a {
+            color: #3391ff;
+        }
+        table {
+            border-color: #545b5e;
+        }
+        ::placeholder {
+            color: #b2aba1;
+        }
+        input:-webkit-autofill,
+        textarea:-webkit-autofill,
+        select:-webkit-autofill {
+            background-color: #404400 !important;
+            color: #e8e6e3 !important;
+        }
+        ::-webkit-scrollbar {
+            background-color: #202324;
+            color: #aba499;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #454a4d;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #575e62;
+        }
+        ::-webkit-scrollbar-thumb:active {
+            background-color: #484e51;
+        }
+        ::-webkit-scrollbar-corner {
+            background-color: #181a1b;
+        }
+        ::selection {
+            background-color: #004daa !important;
+            color: #e8e6e3 !important;
+        }
+        ::-moz-selection {
+            background-color: #004daa !important;
+            color: #e8e6e3 !important;
+        }
+    </style>
+    <meta name="darkreader" content="36ba556710ff4c73bd268076bd5a8e29">
+    <style class="darkreader darkreader--override" media="screen">
+        .vimvixen-hint {
+            background-color: #7b5300 !important;
+            border-color: #d8b013 !important;
+            color: #f3e8c8 !important;
+        }
+        ::placeholder {
+            opacity: 0.5 !important;
+        }
+        #edge-translate-panel-body,
+        .MuiTypography-body1,
+        .nfe-quote-text {
+            color: var(--darkreader-neutral-text) !important;
+        }
+        gr-main-header {
+            background-color: #0f3a48 !important;
+        }
+        .tou-z65h9k,
+        .tou-mignzq,
+        .tou-1b6i2ox,
+        .tou-lnqlqk {
+            background-color: var(--darkreader-neutral-background) !important;
+        }
+        .tou-75mvi {
+            background-color: #032029 !important;
+        }
+        .tou-ta9e87,
+        .tou-1w3fhi0,
+        .tou-1b8t2us,
+        .tou-py7lfi,
+        .tou-1lpmd9d,
+        .tou-1frrtv8,
+        .tou-17ezmgn {
+            background-color: #0a0a0a !important;
+        }
+        .tou-uknfeu {
+            background-color: #231603 !important;
+        }
+        .tou-6i3zyv {
+            background-color: #19576c !important;
+        }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+        embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+    </style>
+</head>
 
-	<!-- Javscript -->
-	<script>
-		if ("serviceWorker" in navigator) {
-			window.addEventListener("load", () => {
-				navigator.serviceWorker && navigator.serviceWorker.register("./sw.js");
-			});
-		}
-	</script>
-	<script defer src="./main.js"></script>
- </head>
+<body>
+    <div class="taiji"></div>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: #ccc;
+        }
+        
+        .taiji {
+            width: 150px;
+            height: 300px;
+            margin: 100px auto;
+            border-right: 150px solid #000;
+            background-color: #fff;
+            border-radius: 150px;
+            animation: rotate 2s infinite linear;
+        }
+        
+        .taiji::before,
+        .taiji::after {
+            content: '';
+            margin-left: 50%;
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            border: 50px solid #000;
+            border-radius: 75px;
+        }
+        
+        .taiji::after {
+            background-color: #000;
+            border: 50px solid #fff;
+        }
+        
+        @keyframes rotate {
+            from {}
+        
+            to {
+                transform: rotate(-360deg);
+            }
+        }
+    </style>
+    <style class="darkreader darkreader--sync" media="screen"></style>
+</body>
 
- <body>
-
-	<header>
-		<div class="container">
-			<a href="./" class="logo" aria-label="Logo">
-				<img src="logo.png" alt="Logo">
-			</a>
-			<h1>Simple Progressive Web App (PWA) template</h1>
-		</div>
-	</header>
-
-	<section>
-		<div class="container">
-			<h2 id="what">What is this?</h2>
-			<p><a href="https://github.com/nikkifurls/simple-pwa" target="_blank" rel="noopener">Simple PWA</a> is a Progressive Web App template that provides the minimum file structure needed to create a PWA&#x2014;a <a href="https://web.dev/what-are-pwas/#reliable" target="_blank" rel="noopener">reliable</a> and <a href="https://web.dev/what-are-pwas/#installable" target="_blank" rel="noopener">installable</a> web application. It's up to you to build upon it, to make it <a href="https://web.dev/what-are-pwas/#capable" target="_blank" rel="noopener">capable</a>.
-			<p>Simple PWA is "offline-first", using a <a href="https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker#cache_then_network" target="_blank" rel="noopener">"cache first"</a> caching strategy, which means on load, two asynchronous requests are kicked off&#x2014;one to the cache, and one to the network. If there's a cached version available, it is used, but the updated version is fetched and stored for the next load. To force the cache to update from the network, change the value of <a href="https://github.com/nikkifurls/simple-pwa/blob/master/sw.js#L1" target="_blank" rel="nofollow noopener"><code>cacheName</code></a> in <a href="https://github.com/nikkifurls/simple-pwa/blob/master/sw.js" target="_blank" rel="nofollow noopener"><code>sw.js</code></a>.</p>
-			<ul>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/android-chrome-36x36.png" target="_blank" rel="nofollow noopener"><code>android-chrome-36x36.png</code></a> <code class="image">image</code> Favicon, Android Chrome M39+ with 0.75 screen density
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/android-chrome-48x48.png" target="_blank" rel="nofollow noopener"><code>android-chrome-48x48.png</code></a> <code class="image">image</code> Favicon, Android Chrome M39+ with 1.0 screen density
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/android-chrome-72x72.png" target="_blank" rel="nofollow noopener"><code>android-chrome-72x72.png</code></a> <code class="image">image</code> Favicon, Android Chrome M39+ with 1.5 screen density
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/android-chrome-96x96.png" target="_blank" rel="nofollow noopener"><code>android-chrome-96x96.png</code></a> <code class="image">image</code> Favicon, Android Chrome M39+ with 2.0 screen density
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/android-chrome-144x144.png" target="_blank" rel="nofollow noopener"><code>android-chrome-144x144.png</code></a> <code class="image">image</code> Favicon, Android Chrome M39+ with 3.0 screen density
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/android-chrome-192x192.png" target="_blank" rel="nofollow noopener"><code>android-chrome-192x192.png</code></a> <code class="image">image</code> Favicon, Android Chrome M39+ with 4.0 screen density
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/android-chrome-256x256.png" target="_blank" rel="nofollow noopener"><code>android-chrome-256x256.png</code></a> <code class="image">image</code> Favicon, Android Chrome M47+ Splash screen with 1.5 screen density
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/android-chrome-384x384.png" target="_blank" rel="nofollow noopener"><code>android-chrome-384x384.png</code></a> <code class="image">image</code> Favicon, Android Chrome M47+ Splash screen with 3.0 screen density
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/android-chrome-512x512.png" target="_blank" rel="nofollow noopener"><code>android-chrome-512x512.png</code></a> <code class="image">image</code> Favicon, Android Chrome M47+ Splash screen with 4.0 screen density
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/apple-touch-icon.png" target="_blank" rel="nofollow noopener"><code>apple-touch-icon.png</code></a> <code class="image">image</code> Favicon, Apple default
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/apple-touch-icon-57x57.png" target="_blank" rel="nofollow noopener"><code>apple-touch-icon-57x57.png</code></a> <code class="image">image</code> Favicon, Apple iPhone, non-Retina with iOS6 or prior
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/apple-touch-icon-60x60.png" target="_blank" rel="nofollow noopener"><code>apple-touch-icon-60x60.png</code></a> <code class="image">image</code> Favicon, Apple iPhone, non-Retina with iOS7
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/apple-touch-icon-72x72.png" target="_blank" rel="nofollow noopener"><code>apple-touch-icon-72x72.png</code></a> <code class="image">image</code> Favicon, Apple iPad, non-Retina with iOS6 or prior
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/apple-touch-icon-76x76.png" target="_blank" rel="nofollow noopener"><code>apple-touch-icon-76x76.png</code></a> <code class="image">image</code> Favicon, Apple iPad, non-Retina with iOS7
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/apple-touch-icon-114x114.png" target="_blank" rel="nofollow noopener"><code>apple-touch-icon-114x114.png</code></a> <code class="image">image</code> Favicon, Apple iPhone, Retina with iOS6 or prior
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/apple-touch-icon-120x120.png" target="_blank" rel="nofollow noopener"><code>apple-touch-icon-120x120.png</code></a> <code class="image">image</code> Favicon, Apple iPhone, Retina with iOS7
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/apple-touch-icon-144x144.png" target="_blank" rel="nofollow noopener"><code>apple-touch-icon-144x144.png</code></a> <code class="image">image</code> Favicon, Apple iPad, Retina with iOS6 or prior
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/apple-touch-icon-152x152.png" target="_blank" rel="nofollow noopener"><code>apple-touch-icon-152x152.png</code></a> <code class="image">image</code> Favicon, Apple iPad, Retina with iOS7
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/apple-touch-icon-180x180.png" target="_blank" rel="nofollow noopener"><code>apple-touch-icon-180x180.png</code></a> <code class="image">image</code> Favicon, Apple iPhone 6 Plus with iOS8
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/browserconfig.xml" target="_blank" rel="nofollow noopener"><code>browserconfig.xml</code></a> IE11 icon configuration file
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/favicon_config.json" target="_blank" rel="nofollow noopener"><code>favicon_config.json</code></a> <a href="#how" >RealFaviconGenerator</a> configuration file
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/favicon.ico" target="_blank" rel="nofollow noopener"><code>favicon.ico</code></a> <code class="image">image</code> Favicon, IE and fallback for other browsers
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/favicon.png" target="_blank" rel="nofollow noopener"><code>favicon.png</code></a> <code class="image">image</code> Favicon generation source image
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/favicon-16x16.png" target="_blank" rel="nofollow noopener"><code>favicon-16x16.png</code></a> <code class="image">image</code> Favicon, default
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/favicon-32x32.png" target="_blank" rel="nofollow noopener"><code>favicon-32x32.png</code></a> <code class="image">image</code> Favicon, Safari on Mac OS
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/index.html" target="_blank" rel="nofollow noopener"><code>index.html</code></a> Main HTML file
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/logo.png" target="_blank" rel="nofollow noopener"><code>logo.png</code></a> <code class="image">image</code> Logo
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/main.js" target="_blank" rel="nofollow noopener"><code>main.js</code></a> Main Javascript file
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/manifest.json" target="_blank" rel="nofollow noopener"><code>manifest.json</code></a> <a href="https://web.dev/add-manifest/" target="_blank" rel="noopener">Manifest file</a>
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/maskable_icon.png" target="_blank" rel="nofollow noopener"><code>maskable_icon.png</code></a> <code class="image">image</code> Favicon, <a href="https://web.dev/maskable-icon" target="_blank" rel="noopener">maskable</a>
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/mstile-70x70.png" target="_blank" rel="nofollow noopener"><code>mstile-70x70.png</code></a> <code class="image">image</code> Favicon, Windows 8 / IE11
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/mstile-144x144.png" target="_blank" rel="nofollow noopener"><code>mstile-144x144.png</code></a> <code class="image">image</code> Favicon, Windows 8 / IE10
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/mstile-150x150.png" target="_blank" rel="nofollow noopener"><code>mstile-150x150.png</code></a> <code class="image">image</code> Favicon, Windows 8 / IE11
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/mstile-310x150.png" target="_blank" rel="nofollow noopener"><code>mstile-310x150.png</code></a> <code class="image">image</code> Favicon, Windows 8 / IE11
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/mstile-310x310.png" target="_blank" rel="nofollow noopener"><code>mstile-310x310.png</code></a> <code class="image">image</code> Favicon, Windows 8 / IE11
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/README.md" target="_blank" rel="nofollow noopener"><code>README.md</code></a> Readme file
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/robots.txt" target="_blank" rel="nofollow noopener"><code>robots.txt</code></a> Robots file
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/safari-pinned-tab.svg" target="_blank" rel="nofollow noopener"><code>safari-pinned-tab.svg</code></a> <code class="image">image</code> Favicon, Safari pinned tab
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/sitemap.xml" target="_blank" rel="nofollow noopener"><code>sitemap.xml</code></a> Sitemap file
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/share.jpg" target="_blank" rel="nofollow noopener"><code>share.jpg</code></a> <code class="image">image</code> Social media sharing
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/sw.js" target="_blank" rel="nofollow noopener"><code>sw.js</code></a> Service worker file
-				</li>
-				<li>
-					<a href="https://github.com/nikkifurls/simple-pwa/blob/master/style.css" target="_blank" rel="nofollow noopener"><code>style.css</code></a> Main CSS file
-				</li>
-			</ul>
-			<h2 class="how">How do I use it?</h2>
-			<ol>
-				<li>Clone the repository from <a href="https://github.com/nikkifurls/simple-pwa" target="_blank" rel="noopener">GitHub</a>.</li>
-				<li>Create all favicon images using <a href="https://realfavicongenerator.net" target="_blank" rel="noopener">RealFaviconGenerator</a> and replace existing images with generated images.
-					<p>If you're able to install the CLI version of <strong>RealFaviconGenerator</strong>, <a href="https://github.com/nikkifurls/simple-pwa/blob/master/favicon_config.json" target="_blank" rel="nofollow noopener"><code>favicon_config.json</code></a> contains all settings to generate these images using the following command from the project's root directory. The <code>real-favicon</code> tool generates images from <a href="https://github.com/nikkifurls/simple-pwa/blob/master/favicon.png" target="_blank" rel="nofollow noopener"><code>favicon.png</code></a>, so replace <a href="https://github.com/nikkifurls/simple-pwa/blob/master/favicon.png" target="_blank" rel="nofollow noopener"><code>favicon.png</code></a> prior to running this command. The resulting <code>favicon_data.json</code> and <code>site.webmanifest</code> can be discarded.</p>
-					<p><code>real-favicon generate favicon_config.json favicon_data.json .</code></p>
-				</li>
-				<li>Create new 650x650 maskable icon using <a href="https://maskable.app" target="_blank" rel="noopener">Maskable.app</a> and replace <a href="https://github.com/nikkifurls/simple-pwa/blob/master/maskable_icon.png" target="_blank" rel="nofollow noopener"><code>maskable_icon.png</code></a>.</li>
-				<li>Create new black vector icon using <a href="http://manytools.org/image/colorize-filter" target="_blank" rel="noopener">Manytools' colorize images tool</a> and replace <a href="https://github.com/nikkifurls/simple-pwa/blob/master/safari-pinned-tab.svg" target="_blank" rel="nofollow noopener"><code>safari-pinned-tab.svg</code></a>.</li>
-				<li>Create new 1200x630 share image and replace <a href="https://github.com/nikkifurls/simple-pwa/blob/master/share.jpg" target="_blank" rel="nofollow noopener"><code>share.jpg</code></a>.</li>
-				<li>Build upon the PWA by adding HTML, CSS, and Javascript.</li>
-			</ol>
-			<h2 class="more">Where can I find other PWAs?</h2>
-			<p>Looking for inspiration? Check out these PWA directories:</p>
-			<ul>
-				<li><a href="https://pwainside.com/" target="_blank" rel="noopener nofollow">PWA Inside</a></li>
-				<li><a href="https://appsco.pe/" target="_blank" rel="noopener nofollow">Appscope</a></li>
-				<li><a href="https://progressiveapp.store/" target="_blank" rel="noopener nofollow">Progressive App Store</a></li>
-				<li><a href="https://pwa-directory.appspot.com/" target="_blank" rel="noopener nofollow">PWA Directory</a></li>
-			</ul>
-			<h2 class="help">Can I contribute?</h2>
-			<p>Want to help improve this? Contributions are welcome! <span class="icon arrow" role="img" aria-label="Arrow">&#x27A1;&#xFE0F;</span>&nbsp;<a href="https://github.com/nikkifurls/simple-pwa" target="_blank" rel="nofollow noopener">GitHub</a></p>
-		</div>
-	</section>
-
-	<footer>
-		<div class="container">
-			<p>If you find this useful, please share it, and if you can, support me directly on <a href="https://patreon.com/nicolefurlan" target="_blank" rel="noopener nofollow">Patreon</a> or <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FACW2AMWGLZ6S&source=url" target="_blank" rel="noopener nofollow">Paypal</a>. Your support is greatly appreciated!&nbsp;<span class="icon heart" role="img" aria-label="Heart">&#x2764;</span></p>
-		</div>
-	</footer>
-
- </body>
-
- </html>
+</html>
