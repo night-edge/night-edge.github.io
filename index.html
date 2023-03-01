@@ -11,6 +11,15 @@
 <meta name="msapplication-TileColor" content="#7f0086">
 <meta name="theme-color" content="#ffffff">
 <title>night-edge的试验田</title> 
+<!-- Java Script -->
+<script>
+		if ("serviceWorker" in navigator) {
+			window.addEventListener("load", () => {
+				navigator.serviceWorker && navigator.serviceWorker.register("./sw.js");
+			});
+		}
+	</script>
+	<script defer src="./main.js"></script>
 </head>
 <body>
 
