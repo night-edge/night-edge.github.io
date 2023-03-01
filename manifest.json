@@ -1,6 +1,6 @@
 {
-	"name": "Simple PWA",
-	"short_name": "Simple PWA",
+	"name": "NightEdge 试验田",
+	"short_name": "NightEdge",
 	"display": "standalone",
 	"start_url": "./?utm_source=pwa_install",
 	"scope": ".",
