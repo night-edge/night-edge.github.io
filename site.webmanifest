@@ -1,6 +1,6 @@
 {
-    "name": "NightEdge \u8bd5\u9a8c\u7530",
-    "short_name": "NightEdge \u8bd5\u9a8c\u7530",
+    "name": "EasyTrip - Get Your Enjoyable Trip!",
+    "short_name": "EasyTrip - Get Your Enjoyable Trip!",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -8,12 +8,14 @@
             "type": "image/png"
         },
         {
-            "src": "/android-chrome-256x256.png",
-            "sizes": "256x256",
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
             "type": "image/png"
         }
     ],
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
-    "display": "standalone"
+    "start_url": "www.night-edge.github.io",
+    "display": "standalone",
+    "orientation": "portrait"
 }
