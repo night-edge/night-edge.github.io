@@ -15,7 +15,7 @@
     ],
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
-    "start_url": "www.night-edge.github.io",
+    "start_url": "https://night-edge.github.io",
     "display": "standalone",
     "orientation": "portrait"
 }
